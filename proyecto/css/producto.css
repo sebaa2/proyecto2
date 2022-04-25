@@ -1,0 +1,32 @@
+html,
+body {
+
+}
+
+body {
+  background-color: white;
+}
+
+h1{
+
+  color: black;
+}
+
+
+h2{
+
+  color: #027cd3;
+}
+
+
+a{
+
+  color:blue;
+}
+
+button{
+
+    align-items: center;
+  
+}
+}
