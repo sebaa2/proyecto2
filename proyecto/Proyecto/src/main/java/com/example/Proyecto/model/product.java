@@ -22,21 +22,17 @@ public class product {
     @Column(name = "marca",nullable = false)
     private String marca;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "cliente_rut", nullable = false)
-    private user rut;
-
 
     public product() {
     }
 
-    public product(Long id, String productName, int price, String product_picture, String marca, user rut) {
+    public product(Long id, String productName, int price, String product_picture, String marca) {
         this.id = id;
         ProductName = productName;
         Price = price;
         this.product_picture = product_picture;
         this.marca = marca;
-        this.rut = rut;
+
     }
 
     public Long getId() {
@@ -79,11 +75,4 @@ public class product {
         this.marca = marca;
     }
 
-    public user getRut() {
-        return rut;
-    }
-
-    public void setRut(user rut) {
-        this.rut = rut;
-    }
 }

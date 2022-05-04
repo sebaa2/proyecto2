@@ -1,6 +1,6 @@
 package com.example.Proyecto.repository;
 
-import com.example.Proyecto.model.product;
+
 import com.example.Proyecto.model.user;
 import org.springframework.data.repository.CrudRepository;
 
