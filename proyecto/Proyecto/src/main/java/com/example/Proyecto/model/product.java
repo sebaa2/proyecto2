@@ -19,12 +19,24 @@ public class product {
     @Column(name = "product_picture", columnDefinition = "TEXT")
     private String product_picture;
 
+    @Column(name = "marca",nullable = false)
+    private String marca;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "cliente_rut", nullable = false)
+    private user rut;
+
+
     public product() {
     }
-    public product(Long id, String productName, int price) {
+
+    public product(Long id, String productName, int price, String product_picture, String marca, user rut) {
         this.id = id;
-        this.ProductName = productName;
-        this.Price = price;
+        ProductName = productName;
+        Price = price;
+        this.product_picture = product_picture;
+        this.marca = marca;
+        this.rut = rut;
     }
 
     public Long getId() {
@@ -59,4 +71,19 @@ public class product {
         this.product_picture = product_picture;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public user getRut() {
+        return rut;
+    }
+
+    public void setRut(user rut) {
+        this.rut = rut;
+    }
 }
