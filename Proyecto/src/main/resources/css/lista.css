@@ -1,0 +1,120 @@
+html,
+body,
+header {
+    height: 150vh;
+    font-family: 'josefin sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.view {
+    height: 100%;
+    background: wheat;
+    background-attachment: fixed;
+}
+
+.barra {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+}
+
+.fotos {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.view h1 {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+
+}
+
+.fixed-top {
+    padding: 20px 0 20px 8px;
+}
+
+.fixed-top .navbar-nav li a {
+    font-size: 19px;
+    color: white !important;
+    transition: .5s ease-in-out;
+}
+
+.fixed-top .navbar-nav li a:hover {
+    color: yellow;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-dark {
+        background-color: rgb(9, 44, 220) !important;
+    }
+}
+
+#main-bar {
+    position: absolute;
+    width: 100%;
+    top: 13%;
+    position: fixed;
+    z-index: 1;
+}
+
+#main-bar .nav-item {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.card {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.card2 {
+    position: absolute;
+     left: 10%;
+    top: 30%;
+}
+
+.card3 {
+    position: absolute;
+    right: 40%;
+    top: 30%;
+}
+
+.card4 {
+    position: absolute;
+    right: 10%;
+    top: 90%;
+}
+
+.card5
+
+ {
+    position: absolute;
+     left: 10%;
+    top: 90%;
+}
+
+.card6 {
+    position: absolute;
+    right: 40%;
+    top: 90%;
+}
+
+
+
+
+.img-fluid {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+
+}
+
+.columnas {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+
+}
